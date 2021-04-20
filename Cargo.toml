@@ -1,0 +1,18 @@
+[package]
+name = "twitch-tui"
+version = "0.1.0"
+authors = ["João Paulo Taylor Ienczak Zanette <jpaulotiz@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.3"
+oauth2 = "4.0.0"
+reqwest = { version = "0.11.3", features = ["blocking"] }
+serde = { version = "1.0.125", features = ["derive"] }
+serde_json = "1.0.64"
+tokio = { version = "0.2", features = ["full"] }
+twitch_api2 = "0.4.1"
+twitch_oauth2 = "0.4.1"
+
+[features]
+executor = ["futures/executor"]
